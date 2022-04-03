@@ -1,0 +1,6 @@
+<div class="wrapper">
+  <div class="title">TODO App</div>
+  <app-composer (taskCreated)="newTaskCreated($event)"></app-composer> <!-- Listen data from child -->
+  <app-list [myTasks]="taskList"></app-list> <!-- send data from parent to child -->
+  <app-action (deleteAll)="delAllTasks()" [taskCount]="taskList.length"></app-action>
+</div>

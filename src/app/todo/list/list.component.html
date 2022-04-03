@@ -1,0 +1,8 @@
+<div class="task-list">
+  <div class="task-item" *ngFor="let task of myTasks; let i = index">
+    <span>{{task}}</span>
+    <span class="material-icons trash" (click)="deleteTask(i)">
+      delete
+    </span>
+  </div>
+</div>

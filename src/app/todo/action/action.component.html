@@ -1,0 +1,6 @@
+<div class="wrapper" *ngIf="taskCount>0">
+  <div class="left" style="font-size: 13px; font-weight:bold;">You have {{taskCount}} pending tasks</div>
+  <div class="right">
+    <button class="clear-btn" (click)="clearAll()">Clear All</button>
+  </div>
+</div>
